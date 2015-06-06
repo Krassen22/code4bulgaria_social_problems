@@ -16,7 +16,8 @@ Rails.application.routes.draw do
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
   resources :homes
-
+  resources :problems
+  
   scope 'api' do
     post 'login' => 'android_api#login'
     post 'register' => 'android_api#register'
