@@ -21,6 +21,10 @@ Rails.application.routes.draw do
     post 'login' => 'android_api#login'
     post 'register' => 'android_api#register'
   end
+
+  get 'edit_info' => 'person_infos#change_info', as: :edit_info
+  patch 'create' => 'person_infos#create'
+
   # Example resource route with options:
   #   resources :products do
   #     member do

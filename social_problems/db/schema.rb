@@ -11,13 +11,35 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150606095543) do
+ActiveRecord::Schema.define(version: 20150606144258) do
 
   create_table "api_tokens", force: :cascade do |t|
     t.string   "token"
     t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "person_infos", force: :cascade do |t|
+    t.integer  "user_id"
+    t.string   "first_name"
+    t.string   "town"
+    t.string   "second_name"
+    t.string   "last_name"
+    t.string   "address"
+    t.string   "mobile_num"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "problems", force: :cascade do |t|
+    t.text     "description", null: false
+    t.integer  "user_id"
+    t.string   "picture"
+    t.float    "lat_one"
+    t.float    "lat_two"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "users", force: :cascade do |t|
