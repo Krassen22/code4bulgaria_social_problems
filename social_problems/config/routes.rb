@@ -18,8 +18,8 @@ Rails.application.routes.draw do
   resources :homes
 
   scope 'api' do
-    get 'login' => 'android_api#login'
-    get 'register' => 'android_api#register'
+    post 'login' => 'android_api#login'
+    post 'register' => 'android_api#register'
   end
   # Example resource route with options:
   #   resources :products do
