@@ -7,74 +7,167 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="shaolinspiders.socialproblems.MainActivity" >
-
-    <TextView
-        android:id="@+id/register_username_tv"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:labelFor="@+id/register_username"
-        android:text="@string/login_username" />
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/register_username_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:labelFor="@+id/register_username"
+                android:text="@string/login_username" />
 
-    <EditText
-        android:id="@+id/register_username"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/login_username_hint"
-        android:layout_below="@+id/register_username_tv"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:ems="10">
-        <requestFocus />
-    </EditText>
-
-
-    <EditText
-        android:id="@+id/register_password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/login_password_hint"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:layout_below="@+id/register_password_tv" />
-
-    <EditText
-        android:id="@+id/register_password_confirm"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/login_password_confirm_hint"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:layout_centerVertical="true"
-        android:layout_below="@+id/confirm_password_tv" />
-
-    <Button
-        android:id="@+id/account_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/submit_acc_button"
-        android:layout_below="@+id/register_password_confirm"
-        android:layout_marginTop="25dp" />
+            <EditText
+                android:id="@+id/register_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/login_username_hint"
+                android:layout_below="@+id/register_username_tv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:ems="10">
+                <requestFocus />
+            </EditText>
 
 
-    <TextView
-        android:id="@+id/register_password_tv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/register_username"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
-        android:labelFor="@+id/register_password"
-        android:text="@string/login_password"
-        android:layout_marginBottom="16dp" />
+            <TextView
+                android:id="@+id/register_password_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/register_username"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:labelFor="@+id/register_password"
+                android:text="@string/login_password"
+                android:layout_marginBottom="16dp" />
 
-    <TextView
-        android:id="@+id/confirm_password_tv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/confirm_password_text"
-        android:labelFor="@+id/register_password_confirm"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="16dp"
-        android:layout_below="@+id/register_password" />
+            <EditText
+                android:id="@+id/register_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/login_password_hint"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:layout_below="@+id/register_password_tv" />
+
+
+            <TextView
+                android:id="@+id/confirm_password_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm_password_text"
+                android:labelFor="@+id/register_password_confirm"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="16dp"
+                android:layout_below="@+id/register_password" />
+
+            <EditText
+                android:id="@+id/register_password_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/login_password_confirm_hint"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:layout_centerVertical="true"
+                android:layout_below="@+id/confirm_password_tv" />
+
+            <TextView
+                android:id="@+id/register_firstName_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/firstName"
+                android:labelFor="@+id/register_firstName"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="16dp"
+                android:layout_below="@+id/register_password_confirm" />
+
+            <EditText
+                android:id="@+id/register_firstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/register_firstName_tv" />
+
+            <TextView
+                android:id="@+id/register_secondName_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/register_secondName"
+                android:labelFor="@+id/register_secondName"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="16dp"
+                android:layout_below="@+id/register_firstName" />
+
+            <EditText
+                android:id="@+id/register_secondName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/register_secondName_tv" />
+
+            <TextView
+                android:id="@+id/register_lastName_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/register_lastName"
+                android:labelFor="@+id/register_lastName"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="16dp"
+                android:layout_below="@+id/register_secondName" />
+
+            <EditText
+                android:id="@+id/register_lastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/register_lastName_tv" />
+
+            <TextView
+                android:id="@+id/register_town_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/register_town"
+                android:labelFor="@+id/register_town"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="16dp"
+                android:layout_below="@+id/register_lastName" />
+
+            <EditText
+                android:id="@+id/register_town"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/register_town_tv" />
+
+            <TextView
+                android:id="@+id/register_address_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/register_address"
+                android:labelFor="@+id/register_address"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="16dp"
+                android:layout_below="@+id/register_town" />
+
+
+            <EditText
+                android:id="@+id/register_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/register_address_tv" />
+
+            <Button
+                android:id="@+id/account_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/submit_acc_button"
+                android:layout_below="@+id/register_address"
+                android:layout_marginTop="25dp" />
+        </RelativeLayout>
+    </ScrollView>
 </RelativeLayout>

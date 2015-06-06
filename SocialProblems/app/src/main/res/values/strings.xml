@@ -47,6 +47,12 @@
     <string name="dialog_cancel">Cancel</string>
     <string name="camera_tryagain">Try again</string>
     <string name="camera_next">Next</string>
+    <string name="firstName">First Name</string>
+    <string name="register_details">Next</string>
+    <string name="register_secondName">Second Name</string>
+    <string name="register_lastName">Last Name</string>
+    <string name="register_town">Town</string>
+    <string name="register_address">Address</string>
 
 
 </resources>
