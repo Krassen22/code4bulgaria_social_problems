@@ -19,12 +19,12 @@
     <string name="login_password_confirm_hint">re-password</string>
 
     <!-- login screen java file -->
-    <string name="website_url_login">http://91.211.189.161:3000/converter_api/login/</string>
-    <string name="website_url_register">http://91.211.189.161:3000/converter_api/register/</string>
-    <string name="website_url_update_requests">http://91.211.189.161:3000/converter_api/get_requests/</string>
-    <string name="website_url_download">http://91.211.189.161:3000/files/download/</string>
-    <string name="website_url_make_request">http://91.211.189.161:3000/converter_api/make_request/</string>
-    <string name="website_url_delete_request">http://91.211.189.161:3000/converter_api/delete_request/</string>
+    <string name="website_url_login">http://192.168.121.40:3000/api/login/</string>
+    <string name="website_url_register">http://192.168.121.40:3000/api/register/</string>
+    <!--<string name="website_url_update_requests">http://192.168.121.40:3000/converter_api/get_requests/</string>-->
+    <!--<string name="website_url_download">http://192.168.121.40:3000/download/</string>-->
+    <!--<string name="website_url_make_request">http://192.168.121.40:3000/converter_api/make_request/</string>-->
+    <!--<string name="website_url_delete_request">http://192.168.121.40:3000/converter_api/delete_request/</string>-->
 
     <!-- register screen java file -->
     <string name="submit_acc_button">Create Account</string>
@@ -45,7 +45,8 @@
 
     <string name="dialog_ok">OK</string>
     <string name="dialog_cancel">Cancel</string>
-
+    <string name="camera_tryagain">Try again</string>
+    <string name="camera_next">Next</string>
 
 
 </resources>
