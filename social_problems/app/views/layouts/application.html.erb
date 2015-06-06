@@ -7,23 +7,48 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<p class="navbar-text pull-right">
-<% if user_signed_in? %>
-	<%= link_to "Home", root_path %>
-	Logged in as <strong><%= current_user.email %></strong>.
-	<%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
-	<%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
-<% else %>
-  <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
-  <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
-<% end %>
-<% if notice %>
-  <p class="alert alert-success"><%= notice %></p>
-<% end %>
-<% if alert %>
-  <p class="alert alert-danger"><%= alert %></p>
-<% end %>
-<%= yield %>
 
+<nav class="navbar navbar-default" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">Brand</a>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <% if user_signed_in? %>
+        <ul class="nav navbar-nav">
+          <li><%= link_to "Home", root_path %></li>
+          <!--Logged in as <strong><%= current_user.email %></strong>-->
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %></li>
+          <li><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></li>
+        </ul>
+      <% else %>
+        <ul class="nav navbar-nav navbar-right">
+          <li><%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %></li>
+          <li><%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %></li>
+        </ul>
+      <% end %>
+      <!--<li class="active"><a href="#">Link</a></li> -->
+    </ul> 
+  </div><!-- /.navbar-collapse -->
+</nav>
+<% if notice %>
+  <p class="alert alert-success" style="width:96%; margin: 0px auto;"><%= notice %></p>
+<% end %>
+  <% if alert %>
+  <p class="alert alert-danger" style="width:96%; margin: 0px auto;"><%= alert %></p>
+<% end %>
+<div class="container">
+  <%= yield %>
+</div>
 </body>
 </html>
