@@ -1,25 +1,17 @@
 package shaolinspiders.socialproblems;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.net.Uri;
 import android.os.Bundle;
-import android.os.Environment;
-import android.provider.MediaStore;
+import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import java.io.File;
-import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 /**
  * Created by dimmat97 on 6/6/15.
  */
-public class Camera extends Activity {
+public class Camera extends ActionBarActivity {
 
     Button next;
     Button tryAgain;
@@ -41,7 +33,7 @@ public class Camera extends Activity {
     View.OnClickListener nextListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            
+
         }
     };
 

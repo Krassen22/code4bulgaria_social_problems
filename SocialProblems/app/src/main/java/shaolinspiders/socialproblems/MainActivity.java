@@ -1,26 +1,15 @@
 package shaolinspiders.socialproblems;
 
-//import android.app.Activity;
-//import android.content.Intent;
-//import android.content.SharedPreferences;
-//import android.os.AsyncTask;
-//import android.os.Bundle;
-//import android.view.View;
-//import android.widget.Button;
-//import android.widget.EditText;
-//import android.widget.Toast;
-//
-//import org.json.JSONException;
-//import org.json.JSONObject;
-
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -28,7 +17,7 @@ import android.widget.Toast;
 import http.HttpPostRequest;
 import android.os.AsyncTask;
 
-public class MainActivity extends Activity {
+public class MainActivity extends ActionBarActivity {
 
     Button submit_button;
     Button submit_reg_button;
