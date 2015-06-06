@@ -93,8 +93,8 @@ public class MainActivity extends Activity {
     }
 
     private void login() {
-        //Intent i = new Intent(getApplicationContext(), ShowRequests.class);
-        //startActivity(i);
+        Intent i = new Intent(getApplicationContext(), Camera.class);
+        startActivity(i);
         finish();
     }
 
