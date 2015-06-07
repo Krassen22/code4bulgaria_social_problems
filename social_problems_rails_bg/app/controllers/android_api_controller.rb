@@ -49,7 +49,18 @@ class AndroidApiController < ApplicationController
 	end
 
 	def send_signal
+		@problem = Problem.new send_signal_params
+		@problem.user = current_user
+		@problem.save
+	end
 
+	def current_user
+		current_user ||= set_user
+	end
+
+	def set_user
+		token = AndroidApi.find_by(token: token_params)
+		token.user
 	end
 
 	def check_token
