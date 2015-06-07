@@ -6,14 +6,12 @@
     <string name="hello_world">Hello world!</string>
 
     <string name="action_logout">Logout</string>
-    <string name="action_new">New</string>
-    <string name="action_update">Update</string>
 
     <!-- login_screen.xml -->
-    <string name="login_username">Email</string>
-    <string name="login_password">Password</string>
-    <string name="submit_button">Login</string>
-    <string name="submit_reg_button">Register</string>
+    <string name="login_username">Имейл</string>
+    <string name="login_password">Парола</string>
+    <string name="submit_button">Влез</string>
+    <string name="submit_reg_button">Регистрация</string>
     <string name="login_username_hint">example@mail.com</string>
     <string name="login_password_hint">password</string>
     <string name="login_password_confirm_hint">re-password</string>
@@ -21,38 +19,22 @@
     <!-- login screen java file -->
     <string name="website_url_login">http://192.168.121.40:3000/api/login/</string>
     <string name="website_url_register">http://192.168.121.40:3000/api/register/</string>
-    <!--<string name="website_url_update_requests">http://192.168.121.40:3000/converter_api/get_requests/</string>-->
-    <!--<string name="website_url_download">http://192.168.121.40:3000/download/</string>-->
-    <!--<string name="website_url_make_request">http://192.168.121.40:3000/converter_api/make_request/</string>-->
-    <!--<string name="website_url_delete_request">http://192.168.121.40:3000/converter_api/delete_request/</string>-->
 
     <!-- register screen java file -->
-    <string name="submit_acc_button">Create Account</string>
-    <string name="confirm_password_text">Confirm Password</string>
-
-    <!-- request_row -->
-    <string name="request_row_id">id: </string>
-    <string name="request_row_status">status: </string>
-    <string name="request_row_converted_file">converted:</string>
-
-    <!-- create request -->
-    <string name="create_request_url">Url</string>
-    <string name="create_request_format">Format</string>
-    <string name="create_request_submit">Submit</string>
-
-    <string name="create_request_url_hint">http://example.com/</string>
-    <string name="create_request_format_hint">convert format</string>
+    <string name="submit_acc_button">Създай</string>
+    <string name="confirm_password_text">Потвърди парола</string>
 
     <string name="dialog_ok">OK</string>
-    <string name="dialog_cancel">Cancel</string>
-    <string name="camera_tryagain">Try again</string>
-    <string name="camera_next">Next</string>
-    <string name="firstName">First Name</string>
-    <string name="register_details">Next</string>
-    <string name="register_secondName">Second Name</string>
-    <string name="register_lastName">Last Name</string>
-    <string name="register_town">Town</string>
-    <string name="register_address">Address</string>
+    <string name="dialog_cancel">Отказ</string>
+    <string name="camera_tryagain">Снимай</string>
+    <string name="camera_next">Следваща стъпка</string>
+    <string name="firstName">Име</string>
+    <string name="register_details">Следваща стъпка</string>
+    <string name="register_secondName">Презиме</string>
+    <string name="register_lastName">Фамилия</string>
+    <string name="register_town">Населено място</string>
+    <string name="register_address">Адрес</string>
+    <string name="description">Описание</string>
 
 
 </resources>

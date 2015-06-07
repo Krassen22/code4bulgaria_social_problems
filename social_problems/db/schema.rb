@@ -33,8 +33,8 @@ ActiveRecord::Schema.define(version: 20150606144258) do
   end
 
   create_table "problems", force: :cascade do |t|
-    t.text     "description", null: false
     t.integer  "user_id"
+    t.text     "description", null: false
     t.string   "picture"
     t.float    "lat_one"
     t.float    "lat_two"

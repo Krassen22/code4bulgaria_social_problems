@@ -19,10 +19,12 @@ public class Camera extends ActionBarActivity {
     Button next;
     Button tryAgain;
     ImageView showImage;
+    Intent next_i;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.camera);
+        next_i = new Intent(getApplicationContext(), MapPane.class);
         setIds();
         addListeners();
         //takePicture();
@@ -63,7 +65,7 @@ public class Camera extends ActionBarActivity {
     View.OnClickListener nextListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-
+            startActivity(next_i);
         }
     };
 
@@ -89,6 +91,7 @@ public class Camera extends ActionBarActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == 0) {
             if (resultCode == RESULT_OK) {
+                next_i.putExtra("image", (Bitmap) data.getExtras().get("data"));
                 Bitmap image = (Bitmap) data.getExtras().get("data");
                 showImage.setImageBitmap(image);
             }
