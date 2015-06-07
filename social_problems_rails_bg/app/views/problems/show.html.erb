@@ -1,0 +1,26 @@
+	<div class="col-lg-3 col-md-6" style="width:100%;">
+		<div class="panel panel-red">
+			<div class="panel-heading" style="overflow: auto;">
+				<span class="btn-group pull-left"> 
+				  <div class="row">
+				    <div class="col-xs-9 text-left">
+				      <div><%= @problem.id %></div>
+				    </div>
+				  </div>
+				  </span>
+				  <span class="btn-group pull-right">Send</span>
+			</div>
+			<div class="panel-footer" style="color: black;">
+			  <span class="pull-left"><%= @problem.description %></span>
+				<% if @problem.picture %>
+			 	 <span class="pull-right"><a href="\<%= @problem.picture.slice(7..-1) %>" ><img style="width:200px; height: 100px;	" src="\<%= @problem.picture.slice(7..-1) %>" /></a></span>	
+				<% end %>
+			  <div class="clearfix"></div>
+			</div>
+		</div>
+	<% if @problem.lat_two and @problem.lat_one %>
+		<div id="map">
+			<script type="text/javascript" src="map/javascript.js"></script><div style="overflow:hidden;height:450px;width:100%;border: 8px solid #888; border-radius: 13px;"><div id="gmap_canvas" style="height:500px; width:100%;"></div><div style="#gmap_canvas img{max-width:none!important;background:none!important}"></div><a class="google-map-code" href="http://wordpress-themes.org" id="get-map-data">wordpress-themes.org</a></div><script type="text/javascript"> function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(<%= @problem.lat_one %>, <%= @problem.lat_two %>),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(<%= @problem.lat_one %>, <%= @problem.lat_two %>)});infowindow = new google.maps.InfoWindow({content:"<b>AN DER BURG 25</b><br/>M&Uuml;HLHAUSEN, 99974<br/> M&uuml;hlhausen" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+		</div>
+	<% end %>	
+</div>

@@ -4,6 +4,7 @@ class CreateProblems < ActiveRecord::Migration
 			t.integer :user_id
 			t.text :description, null: false
 			t.string :picture
+			t.string :receiver
 			t.float :lat_one
 			t.float :lat_two
 			t.timestamps null: false

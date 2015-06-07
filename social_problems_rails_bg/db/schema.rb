@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(version: 20150606144258) do
     t.integer  "user_id"
     t.text     "description", null: false
     t.string   "picture"
+    t.string   "receiver"
     t.float    "lat_one"
     t.float    "lat_two"
     t.datetime "created_at",  null: false

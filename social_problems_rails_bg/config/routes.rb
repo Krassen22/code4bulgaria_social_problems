@@ -25,6 +25,7 @@ Rails.application.routes.draw do
 
   get 'edit_info' => 'person_infos#change_info', as: :edit_info
   patch 'create' => 'person_infos#create'
+  post 'create' => 'person_infos#create'
 
   # Example resource route with options:
   #   resources :products do

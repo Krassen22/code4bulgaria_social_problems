@@ -10,6 +10,7 @@
 	    </div>
 	    <div class="panel-footer" style="color: black;">
 	      <span class="pull-left"><%= problem.description %></span>
+	      <span class="pull-right"><%= button_to 'Read More', problem_path(problem.id), method: :get, class: "btn btn-primary btn-lg round", type: "button"%></span>	
 	      <div class="clearfix"></div>
 	    </div>
 	  </div>

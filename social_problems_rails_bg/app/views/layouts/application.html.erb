@@ -46,14 +46,20 @@
 <% if notice %>
   <p class="alert alert-success" style="width:96%; margin: 0px auto;"><%= notice %></p>
 <% end %>
-  <% if alert %>
+<% if alert %>
   <p class="alert alert-danger" style="width:96%; margin: 0px auto;"><%= alert %></p>
 <% end %>
-
-
-
+<div class="banner_wrapper">
+  <div class="banner_image">
+  </div>
+</div>
 <div class="container">
   <%= yield %>
+</div>
+<div class="footerholder">
+  <div class="footer">
+      <p> © 2015 Social Problems. Всички права запазени.</p>
+  </div>
 </div>
 </body>
 </html>
