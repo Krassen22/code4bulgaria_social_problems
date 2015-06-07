@@ -4,39 +4,35 @@
     android:layout_height="match_parent"
     android:weightSum="1">
 
-    <!--<ScrollView-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="311dp"-->
-        <!--android:id="@+id/scrollView"-->
-        <!--android:layout_weight="0.97">-->
-
-        <!--<EditText-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:inputType="textMultiLine"-->
-            <!--android:ems="10"-->
-            <!--android:id="@+id/description"-->
-            <!--android:hint = "@string/description"-->
-            <!--android:layout_gravity="center_horizontal"-->
-            <!--android:layout_weight="0.15" />-->
-        <!-- -->
-        <!-- -->
-
-
-
-    <!--</ScrollView>-->
-
-    <TextView
-        android:id="@+id/tv_location"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/map"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/tv_location"
-        class="com.google.android.gms.maps.SupportMapFragment" />
+        android:layout_height="311dp"
+        android:id="@+id/scrollView"
+        android:layout_weight="0.97">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/description"
+            android:hint = "@string/description"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.15" />
+
+    </ScrollView>
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_location"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+    <!--<fragment xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:id="@+id/map"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@id/tv_location"-->
+        <!--class="com.google.android.gms.maps.SupportMapFragment" />-->
 
     <LinearLayout
         android:layout_width="match_parent"

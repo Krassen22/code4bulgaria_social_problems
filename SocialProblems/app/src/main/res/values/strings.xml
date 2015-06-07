@@ -19,6 +19,7 @@
     <!-- login screen java file -->
     <string name="website_url_login">http://192.168.121.40:3000/api/login/</string>
     <string name="website_url_register">http://192.168.121.40:3000/api/register/</string>
+    <string name="website_url_send_signal">http://192.168.121.40:3000/api/send_signal/</string>
 
     <!-- register screen java file -->
     <string name="submit_acc_button">Създай</string>

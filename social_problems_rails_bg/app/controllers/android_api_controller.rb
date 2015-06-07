@@ -59,15 +59,19 @@ class AndroidApiController < ApplicationController
 	end
 
 	def set_user
-		token = AndroidApi.find_by(token: token_params)
+		token = ApiToken.find_by(token: token_params)
 		token.user
 	end
 
 	def check_token
-		set_error_messages "Error" if AndroidApi.find_by(token: token_params).nil?
+        render(plain: "Error") if ApiToken.find_by(token: token_params).nil?
 	end
 
+    def token_params
+        params.require(:token)
+    end
+
 	def send_signal_params
-		params.permit!
+        params.permit(:description, :lat_two, :lat_one)
 	end
 end
