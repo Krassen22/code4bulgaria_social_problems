@@ -48,4 +48,15 @@ class AndroidApiController < ApplicationController
 		render plain: custom_error || @user.errors.full_messages.join("\n")
 	end
 
+	def send_signal
+
+	end
+
+	def check_token
+		set_error_messages "Error" if AndroidApi.find_by(token: token_params).nil?
+	end
+
+	def send_signal_params
+		params.permit!
+	end
 end

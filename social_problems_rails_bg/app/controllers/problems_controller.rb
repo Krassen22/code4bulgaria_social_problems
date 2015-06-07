@@ -29,7 +29,7 @@ class ProblemsController < ApplicationController
 	end
 
 	def index
-		redirect_to :root_path
+		render 'new'
 	end
 
 	private

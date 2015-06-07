@@ -21,11 +21,13 @@ Rails.application.routes.draw do
   scope 'api' do
     post 'login' => 'android_api#login'
     post 'register' => 'android_api#register'
+    post 'send_signal' => 'android_api#send_signal'
   end
 
   get 'edit_info' => 'person_infos#change_info', as: :edit_info
   patch 'create' => 'person_infos#create'
   post 'create' => 'person_infos#create'
+
 
   # Example resource route with options:
   #   resources :products do
